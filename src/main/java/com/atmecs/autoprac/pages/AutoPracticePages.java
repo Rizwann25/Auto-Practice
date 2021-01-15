@@ -36,6 +36,6 @@ import com.atmecs.autoprac.setup.SetUp;
 			HelperClass.elementClick(driver, Location_path.getProperty("DOBMonth"));
 			HelperClass.elementClick(driver, Location_path.getProperty("DOBYear"));
 			
-			Thread.sleep(3000);
-		}
+			Thread.sleep(2000);
+			}
 }
