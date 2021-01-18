@@ -37,5 +37,45 @@ import com.atmecs.autoprac.setup.SetUp;
 			HelperClass.elementClick(driver, Location_path.getProperty("DOBYear"));
 			
 			Thread.sleep(2000);
+			HelperClass.enterElement(driver, Location_path.getProperty("Address1"), Data_path.getProperty("Address"));
+			HelperClass.enterElement(driver, Location_path.getProperty("CityPath"), Data_path.getProperty("City"));
+			HelperClass.elementClick(driver, Location_path.getProperty("State"));
+			HelperClass.enterElement(driver, Location_path.getProperty("PostalCode"), Data_path.getProperty("Postal"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Country"));
+			HelperClass.enterElement(driver, Location_path.getProperty("MobilePhone"), Data_path.getProperty("Mobile"));
+			HelperClass.enterElement(driver, Location_path.getProperty("AliasAddress"), Data_path.getProperty("Alias"));
+			HelperClass.enterElement(driver, Location_path.getProperty("Password"), Data_path.getProperty("Pwd"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Register"));
+			HelperClass.elementClick(driver, Location_path.getProperty("HomeButton1"));
+			Thread.sleep(2000);
+			
+			//Add To Cart
+			HelperClass.elementClick(driver, Location_path.getProperty("BestSeller"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Product1"));
+			HelperClass.elementClick(driver, Location_path.getProperty("QuantityPlus"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Size"));
+			HelperClass.elementClick(driver, Location_path.getProperty("AddToCartButton"));
+			HelperClass.elementClick(driver, Location_path.getProperty("ContinueShopping"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Women"));
+			HelperClass.elementClick(driver, Location_path.getProperty("DressesIcon"));
+			HelperClass.elementClick(driver, Location_path.getProperty("SummerDresses"));
+			HelperClass.elementClick(driver, Location_path.getProperty("SummerProduct1"));
+			HelperClass.elementClick(driver, Location_path.getProperty("Size"));
+			Thread.sleep(2000);
+			
+			//Check Out
+			HelperClass.elementClick(driver, Location_path.getProperty("AddToCartButton"));			
+			HelperClass.elementClick(driver, Location_path.getProperty("CheckOut"));
+			HelperClass.elementClick(driver, Location_path.getProperty("ProceedToCheckOut"));
+			HelperClass.elementClick(driver, Location_path.getProperty("NextCheckOut"));
+			HelperClass.elementClick(driver, Location_path.getProperty("CheckBox"));
+			HelperClass.elementClick(driver, Location_path.getProperty("NextButton"));
+			Thread.sleep(2000);
+			
+			//Payment to Proceed
+			HelperClass.elementClick(driver, Location_path.getProperty("PayByCheck"));
+			HelperClass.elementClick(driver, Location_path.getProperty("ConfirmMyOrder"));
+			Thread.sleep(2000);
+			
 			}
 }
